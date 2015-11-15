@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.ttf?48bg3v');
+}
+[class^="icon-"] {
+	font-family: 'icomoon';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: 12px;
+  font-family: arial;
+}
+body {
+  margin: 0;
+  background-color: #50BBFF;
+}
+footer {
+  position: fixed;
+  top: 97%;
+  height: 3%;
+  width: 100%;
+  margin: 0;
+  padding-top: 1%;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 1px 1px 0 #999;
+  color: rgba(33, 66, 99, 1);
+  background-color: rgba(33, 66, 99, 0.4);
+}
+
+.headshotWrapper {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30%;
+}
+#mainHeadshot {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 4px 5px 2px #888;
+}
+
+.mainNavWrapper {
+  width: 40%;
+  margin: 10px auto;
+  text-align: center;
+}
+.mainNavLinks {
+  display: block;
+  margin: 7px 0;
+  border-radius: 45px;
+  padding: 0 10%;
+  font-size: 6em;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #888;
+  color: #FFF;
+  background-color: #40ABEF;
+}
+.mainNavLinks:hover {
+  text-shadow: 4px 4px 4px #444;
+}
+
+.lighWrapper {
+  width: 40%;
+  margin: 15% auto 0 auto;
+  border-top: 1px solid #000;
+  padding-top: 5%;
+  text-align: center;
+}
+.noDec {
+  text-decoration: none;
+  color: #444;
+}
+.icon-phone:before {
+	content: "\e900";
+}
+.icon-github:before {
+	content: "\e901";
+  font-size: 7em;
+  margin: 0 15px;
+}
+.icon-linkedin:before {
+	content: "\e902";
+  font-size: 7em;
+  margin: 0 15px;
+}
