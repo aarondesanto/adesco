@@ -35,8 +35,8 @@ footer {
   margin-top: 30%;
 }
 #mainHeadshot {
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   border-radius: 50%;
   box-shadow: 4px 5px 2px #888;
 }
@@ -67,6 +67,7 @@ footer {
   border-top: 1px solid #000;
   padding-top: 5%;
   text-align: center;
+  opacity: 0.5;
 }
 .noDec {
   text-decoration: none;
@@ -84,4 +85,54 @@ footer {
 	content: "\e902";
   font-size: 7em;
   margin: 0 15px;
+}
+
+@media (min-width: 1200px) {
+  footer {
+    position: fixed;
+    top: 97%;
+    height: 3%;
+    width: 100%;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 1px 0 #999;
+    color: rgba(33, 66, 99, 1);
+    background-color: rgba(33, 66, 99, 0.4);
+  }
+  .headshotWrapper {
+    width: 15%;
+    margin-top: 8%;
+  }
+  #mainHeadshot {
+    box-shadow: 2px 3px 1px #666;
+  }
+  .mainNavWrapper {
+    width: 60%;
+    margin: 5% auto;
+  }
+  .mainNavLinks {
+    display: inline;
+    margin: 1% 5%;
+    padding: 0;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px #666;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .mainNavLinks:hover {
+    text-shadow: 4px 4px 4px #444;
+  }
+  .lighWrapper {
+    width: 40%;
+    margin: 8% auto 0 auto;
+    padding-top: 3%;
+  }
+  .icon-github:before {
+    font-size: 5em;
+    margin: 0 15px;
+  }
+  .icon-linkedin:before {
+    font-size: 5em;
+    margin: 0 15px;
+  }
 }
