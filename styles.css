@@ -1,3 +1,4 @@
+/*  main rules for icomoon font  */
 @font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.ttf?48bg3v');
@@ -6,7 +7,33 @@
 	font-family: 'icomoon';
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  opacity: 0.5;
+  font-size: 7em;
+  margin: 0 15px;
+  text-shadow: 2px 2px 2px #888;
 }
+[class^="icon-"]:hover {
+  opacity: 1;
+}
+[class^="icon-"]:active {
+	background-color: #444;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 2px 2px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+.icon-phone:before {
+	content: "\e900";
+}
+.icon-github:before {
+	content: "\e901";
+}
+.icon-linkedin:before {
+	content: "\e902";
+}
+/*  main rules for icomoon font  */
+
 html {
   font-size: 12px;
   font-family: arial;
@@ -56,9 +83,11 @@ footer {
   text-shadow: 2px 2px 2px #888;
   color: #FFF;
   background-color: #40ABEF;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-.mainNavLinks:hover {
+.mainNavLinks:active {
   text-shadow: 4px 4px 4px #444;
+	box-shadow: none;
 }
 
 .lighWrapper {
@@ -67,38 +96,22 @@ footer {
   border-top: 1px solid #000;
   padding-top: 5%;
   text-align: center;
-  opacity: 0.5;
 }
 .noDec {
   text-decoration: none;
   color: #444;
 }
-.icon-phone:before {
-	content: "\e900";
-}
-.icon-github:before {
-	content: "\e901";
-  font-size: 7em;
-  margin: 0 15px;
-}
-.icon-linkedin:before {
-	content: "\e902";
-  font-size: 7em;
-  margin: 0 15px;
-}
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
+	[class^="icon-"] {  /* icomoon font rule */
+	  font-size: 5em;
+	}
   footer {
-    position: fixed;
-    top: 97%;
-    height: 3%;
-    width: 100%;
-    margin: 0;
-    font-size: 2em;
-    text-align: center;
-    text-shadow: 1px 1px 0 #999;
-    color: rgba(33, 66, 99, 1);
-    background-color: rgba(33, 66, 99, 0.4);
+    top: 95%;
+    font-size: 1.5em;
+    text-shadow: 3px 3px 7px rgba(50, 50, 50, 0.5);
+    color: rgba(225, 225, 255, 0.5);
+    background-color: rgba(33, 66, 99, 0);
   }
   .headshotWrapper {
     width: 15%;
@@ -118,21 +131,17 @@ footer {
     font-size: 4em;
     text-shadow: 2px 2px 2px #666;
     background-color: rgba(0, 0, 0, 0);
+		box-shadow: none;
   }
   .mainNavLinks:hover {
     text-shadow: 4px 4px 4px #444;
+  }
+  .mainNavLinks:active {
+    text-shadow: 1px 1px 1px #444;
   }
   .lighWrapper {
     width: 40%;
     margin: 8% auto 0 auto;
     padding-top: 3%;
-  }
-  .icon-github:before {
-    font-size: 5em;
-    margin: 0 15px;
-  }
-  .icon-linkedin:before {
-    font-size: 5em;
-    margin: 0 15px;
   }
 }
