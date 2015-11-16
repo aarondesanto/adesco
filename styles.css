@@ -1,7 +1,12 @@
+@font-face {
+	font-family: 'eurofurence';
+  src: url('fonts/eurofurence.ttf');
+}
+
 /*  main rules for icomoon font  */
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.ttf?48bg3v');
+	src: url('fonts/icomoon.ttf?48bg3v');
 }
 [class^="icon-"] {
 	font-family: 'icomoon';
@@ -29,7 +34,7 @@
 
 html {
   font-size: 12px;
-  font-family: arial;
+  font-family: 'eurofurence', arial;
 }
 body {
   margin: 0;
