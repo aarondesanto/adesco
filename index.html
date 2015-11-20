@@ -1,35 +1,19 @@
 <!doctype html>
 <html>
   <head>
-    <link href='styles.css' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
     <script src='script.js'  type='text/javascript'></script>
+    <link href='styles.css' rel='stylesheet' type='text/css'>
     <meta charset='utf-8'>
+    <base href='/'>
     <title>Welcome</title>
   </head>
-  <body ng-app="mainModule">
+  <body ng-app="homeModule">
 
-    <div clas="entireWrapper">
-
-      <div class="headshotWrapper">
-        <img id="mainHeadshot" src="images/headshot.jpg">
-      </div>
-
-      <div class="mainNavWrapper">
-        <a class="mainNavLinks" href="#me">me</a> <!-- implement fluid scroll down to next page -->
-        <a class="mainNavLinks" href="portfolio.html">portfolio</a>
-        <a class="mainNavLinks" href="contact.html">contact</a>
-      </div>
-
-      <div class="lighWrapper">
-        <a class="noDec" href="https://www.linkedin.com/in/aarondesanto"><span class="icon-linkedin"></span></a>
-        <a class="noDec" href="https://github.com/aarondesanto"><span class="icon-github"></span></a>
-      </div>
-
-    </div>
+    <ng-view></ng-view>
 
     <footer>Site design &copy; Aaron DeSanto</footer>
-
   </body>
 </html>

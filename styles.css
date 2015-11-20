@@ -1,9 +1,15 @@
-@font-face {
+* { /* Reset box model */
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+@font-face { /* Main text font */
 	font-family: 'eurofurence';
   src: url('fonts/eurofurence.ttf');
 }
 
-/*  main rules for icomoon font  */
+/*  Start of main icon font styles  */
 @font-face {
 	font-family: 'icomoon';
 	src: url('fonts/icomoon.ttf?48bg3v');
@@ -30,8 +36,9 @@
 .icon-linkedin:before {
 	content: "\e902";
 }
-/*  main rules for icomoon font  */
+/*  End of main icon font styles  */
 
+/* Start of tag-specific styles */
 html {
   font-size: 12px;
   font-family: 'eurofurence', arial;
@@ -39,6 +46,13 @@ html {
 body {
   margin: 0;
   background-color: #50BBFF;
+}
+nav {
+  position: fixed;
+  top: 0;
+  height: 10%;
+  width: 100%;
+  background-color: #445;
 }
 footer {
   position: fixed;
@@ -53,7 +67,9 @@ footer {
   color: rgba(33, 66, 99, 1);
   background-color: rgba(33, 66, 99, 0.4);
 }
+/* End of tag-specific styles */
 
+/* Start of entry page styles */
 .headshotWrapper {
   width: 50%;
   margin: 0 auto;
@@ -65,13 +81,12 @@ footer {
   border-radius: 50%;
   box-shadow: 4px 5px 2px #888;
 }
-
-.mainNavWrapper {
+.homeLinksWrapper {
   width: 40%;
   margin: 10px auto;
   text-align: center;
 }
-.mainNavLinks {
+.homeLinks {
   display: block;
   margin: 7px 0;
   border-radius: 45px;
@@ -83,38 +98,54 @@ footer {
   background-color: #40ABEF;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-.mainNavLinks:active {
+.homeLinks:active {
   text-shadow: 4px 4px 4px #444;
 	box-shadow: none;
 }
-
-.lighWrapper {
+.gitHubLinkedInWrapper {
   width: 40%;
   margin: 15% auto 0 auto;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   padding-top: 5%;
   text-align: center;
 }
-.noDec {
+.noDecoration {
   text-decoration: none;
   color: #444;
 }
-.navFifth {
-	display: inline-block;
-	height: 100%;
-	width: 19%;
-	vertical-align: top;
-}
-.altNavWrapper {
-	position: fixed;
-	width: 100%;
-	height: 10%;
-	top: 0;
-	background-color: #67A;
-}
+/* End of entry page styles */
 
+/* Start of nav bar styles */
+.navBar {
+  height: 100%;
+}
+.navLi, .navLiEmpty {
+  display: inline-block;
+  height: 100%;
+  width: 19%;
+  vertical-align: top;
+}
+.navLi:hover {
+  background-color: #568;
+}
+.navLi:active {
+  box-shadow: inset 1px 1px 8px 1px #112;
+}
+.navA {
+  display: block;
+  height: 70%;
+  padding-top: 5%;
+  text-align: center;
+  font-size: 2em;
+  font-family: sans-serif;
+  color: #FFF;
+  text-decoration: none;
+}
+/* End of nav bar styles */
+
+/* Start of Large Wide media query */
 @media (min-width: 1440px) {
-	[class^="icon-"] {  /* icomoon font rule */
+	[class^="icon-"] {  /* icon font rule */
 	  font-size: 5em;
 	}
 	[class^="icon-"]:hover {
@@ -134,11 +165,11 @@ footer {
   #mainHeadshot {
     box-shadow: 2px 3px 1px #666;
   }
-  .mainNavWrapper {
+  .homeLinksWrapper {
     width: 60%;
     margin: 5% auto;
   }
-  .mainNavLinks {
+  .homeLinks {
     display: inline;
     margin: 1% 5%;
     padding: 0;
@@ -147,16 +178,17 @@ footer {
     background-color: rgba(0, 0, 0, 0);
 		box-shadow: none;
   }
-  .mainNavLinks:hover {
+  .homeLinks:hover {
     text-shadow: 4px 4px 4px #444;
   }
-  .mainNavLinks:active {
+  .homeLinks:active {
 	  color: #FFF;
 		text-shadow: -1px -1px 3px #000;
   }
-  .lighWrapper {
+  .gitHubLinkedInWrapper {
     width: 20%;
     margin: 8% auto 0 auto;
     padding-top: 3%;
   }
 }
+/* End of Large Wide media query */
