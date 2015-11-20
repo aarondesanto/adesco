@@ -2,6 +2,7 @@
   margin: 0;
   border: 0;
   padding: 0;
+  overflow: auto; /* Part 1 of overflow control (this removes the huge blank space without an element on the main page) */
 }
 
 @font-face { /* Main text font */
@@ -73,13 +74,19 @@ footer {
 }
 /* End of tag-specific styles */
 
+.errorTextOne, .errorTextThree, .headshotWrapper, .homeLinksWrapper, .gitHubLinkedInWrapper, .navBar {
+  overflow: visible; /* Part 2 of overflow control (this ensures that shadows display properly when they spill over borders) */
+}
+
 .errorPage { /* Applies to <main> on 404 page */
   height: 100%;
 }
 .errorTextOne { /* Applies to <main> on 404 page */
+  padding-top: 50px;
   text-align: center;
   font-size: 5em;
   text-shadow: 2px 2px 10px #555;
+  vertical-align: middle;
 }
 .errorTextThree { /* Applies to <main> on 404 page */
   text-align: center;
