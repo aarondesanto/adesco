@@ -3,23 +3,23 @@ var app = angular.module('homeModule', ['ngRoute']);
 app.config(function($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: 'home.html',
+      templateUrl: 'partials/home.html',
       controller: 'mainControl'
     })
     .when('/me', {
-      templateUrl: 'me.html',
+      templateUrl: 'partials/me.html',
       controller: 'mainControl'
     })
     .when('/portfolio', {
-      templateUrl: 'portfolio.html',
+      templateUrl: 'partials/portfolio.html',
       controller: 'mainControl'
     })
     .when('/contact', {
-      templateUrl: 'contact.html',
+      templateUrl: 'partials/contact.html',
       controller: 'mainControl'
     })
     .otherwise({
-      templateUrl: '404.html',
+      templateUrl: 'partials/404.html',
       controller: 'mainControl'
   });
 
