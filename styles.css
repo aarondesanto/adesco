@@ -5,40 +5,6 @@
   overflow: auto; /* Part 1 of overflow control (this removes the huge blank space without an element on the main page) */
 }
 
-@font-face { /* Main text font */
-	font-family: 'eurofurence';
-  src: url('fonts/eurofurence.ttf');
-}
-
-/*  Start of main icon font styles  */
-@font-face {
-	font-family: 'icomoon';
-	src: url('fonts/icomoon.ttf?48bg3v');
-}
-[class^="icon-"] {
-	font-family: 'icomoon';
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-  opacity: 0.5;
-  font-size: 7em;
-  margin: 0 15px;
-  text-shadow: 2px 2px 2px #888;
-}
-[class^="icon-"]:active {
-  color: rgba(0, 0, 0, 0.5);
-  text-shadow: 1px 2px 2px rgba(255,255,255,0.5);
-}
-.icon-phone:before {
-	content: "\e900";
-}
-.icon-github:before {
-	content: "\e901";
-}
-.icon-linkedin:before {
-	content: "\e902";
-}
-/*  End of main icon font styles  */
-
 /* Start of tag-specific styles */
 html {
   height: 100%;
@@ -74,33 +40,69 @@ footer {
 }
 /* End of tag-specific styles */
 
+@font-face { /* Main text font */
+	font-family: 'eurofurence';
+  src: url('fonts/eurofurence.ttf');
+}
+
+/*  Start of main icon font styles  */
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.ttf?48bg3v');
+}
+[class^="icon-"] {
+	font-family: 'icomoon';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  opacity: 0.5;
+  font-size: 7em;
+  margin: 0 15px;
+  text-shadow: 2px 2px 2px #888;
+}
+[class^="icon-"]:active {
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 2px 2px rgba(255,255,255,0.5);
+}
+.icon-phone:before {
+	content: "\e900";
+}
+.icon-github:before {
+	content: "\e901";
+}
+.icon-linkedin:before {
+	content: "\e902";
+}
+/*  End of main icon font styles  */
+
 .errorTextOne, .errorTextThree, .headshotWrapper, .homeLinksWrapper, .gitHubLinkedInWrapper, .navBar {
   overflow: visible; /* Part 2 of overflow control (this ensures that shadows display properly when they spill over borders) */
 }
 
-.errorPage { /* Applies to <main> on 404 page */
+/*  Start of 404 page styles  */
+.errorPage {
   height: 100%;
 }
-.errorTextOne { /* Applies to <main> on 404 page */
+.errorTextOne {
   padding-top: 50px;
   text-align: center;
   font-size: 5em;
   text-shadow: 2px 2px 10px #555;
   vertical-align: middle;
 }
-.errorTextThree { /* Applies to <main> on 404 page */
+.errorTextThree {
   text-align: center;
   font-size: 3em;
   text-shadow: 2px 2px 10px #555;
 }
+/*  End of 404 page styles  */
 
-/* Start of entry page styles */
+/*  Start of entry page styles  */
 .headshotWrapper {
   width: 50%;
   margin: 0 auto;
   margin-top: 30%;
 }
-#mainHeadshot {
+.mainHeadshot {
   max-height: 100%;
   max-width: 100%;
   border-radius: 50%;
@@ -188,7 +190,7 @@ footer {
     width: 15%;
     margin-top: 8%;
   }
-  #mainHeadshot {
+  .mainHeadshot {
     box-shadow: 2px 3px 1px #666;
   }
   .homeLinksWrapper {

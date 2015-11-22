@@ -27,6 +27,6 @@ app.config(function($routeProvider, $locationProvider) {
 
 });
 
-app.controller('mainControl', function() {
+app.controller('mainControl', function($scope) {
 
 });
