@@ -16,7 +16,9 @@
         <a href="{{project.link}}">{{project.name}}</a>
      </div>
      <div class="language-tag" ng-repeat="language in project.langs">{{language}}</div>
-     <div class="project-thumb"><img src="http://placehold.it/100x100" alt="{{project.alt}}" /></div>
+     <div class="project-thumb">
+       <img src="http://placehold.it/100x100" title="{{project.alt}}" alt="{{project.alt}}" />
+     </div>
      <div class="project-desc">{{project.content}}</div>
   </div>
 </main>

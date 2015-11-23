@@ -191,7 +191,23 @@ footer {
 /* Start of Portfolio Styles */
 .main-port {
   width: 65%;
-  margin: 0 auto;
+  margin: 5% auto;
+}
+.language-tag {
+  position: relative;
+  top: 50%;
+  left: 100%;
+  height: 20px;
+  width: 65px;
+  margin-bottom: 3px;
+  border: 2px solid #FFF;
+  padding-top: 2px;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px #666;
 }
 .project-thumb {
   position: absolute;
@@ -203,7 +219,10 @@ footer {
   top: 35%;
   left: 5%;
   width: 90%;
-  border-top: 1px solid #000;
+  border-top: 1px solid #FFF;
+  padding-top: 5%;
+  font-size: 1.5em;
+  color: #FFF;
 }
 /* End of Portfolio Styles */
 
@@ -215,8 +234,8 @@ footer {
   vertical-align: top;
   width: 300px;
   height: 400px;
-  margin: 50px 50px 0 50px;
-  background-color: gray;
+  margin: 0 50px 50px 50px;
+  background-color: rgba(0, 0, 0, 0.5);;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -297,23 +316,6 @@ footer {
   border-bottom: 29px solid #E80CA8; /* Color 2 */
 }
 /* End of Ribbon Style Banner */
-
-.language-tag {
-  position: relative;
-  top: 50%;
-  left: 100%;
-  height: 20px;
-  width: 65px;
-  margin-bottom: 3px;
-  border: 2px solid #FFF;
-  padding-top: 2px;
-  font-size: 1.3em;
-  font-weight: bold;
-  text-align: center;
-  color: #FFF;
-  background-color: rgba(0, 0, 0, 0.5);;
-  box-shadow: 2px 2px 4px #666;
-}
 
 /* Start of Large Wide media query */
 @media (min-width: 1440px) {

@@ -4,7 +4,7 @@ app.factory('portfolioSrv', function() {
   return { projects: [
       {
         name: "Contentment",
-        content: "Some Content",
+        content: "Lightweight jQuery plugin for generating a specified amount of garbage characters or words.",
         langs: ["JavaScript", "jQuery"],
         link: 'https://github.com/aarondesanto/Contentment',
         thumb: 'images/thumb1.jpg',
@@ -12,7 +12,7 @@ app.factory('portfolioSrv', function() {
       },
       {
         name: "Seats",
-        content: "Some Content",
+        content: "Movie theater seat reservation app.",
         langs: ["HTML", "CSS", "JavaScript", "jQuery"],
         link: 'https://github.com/aarondesanto/seats',
         thumb: 'images/thumb1.jpg',
@@ -20,14 +20,14 @@ app.factory('portfolioSrv', function() {
       },
       {
         name: "ShoppStar",
-        content: "Some More Content",
+        content: "Simple shopping list built with Angular.",
         langs: ["HTML", "CSS", "JavaScript", "Angular", "jQuery"],
         link: 'https://github.com/aarondesanto/ShopWithAngular',
         thumb: 'images/thumb1.jpg',
         alt: 'TEXT'
       },
       {
-        name: "SHAPES THING",
+        name: "Shapes Thing",
         content: "Some Content",
         langs: ["HTML", "CSS"],
         link: 'https://github.com/aarondesanto/',
@@ -35,7 +35,7 @@ app.factory('portfolioSrv', function() {
         alt: 'TEXT'
       },
       {
-        name: "ANIMATION",
+        name: "Animation",
         content: "Some Content",
         langs:  ["HTML", "CSS", "JavaScript", "jQuery"],
         link: 'https://github.com/aarondesanto/',
