@@ -10,8 +10,9 @@
 
 <h1>Portfolio</h1>
 
-<div class="content-box">
+<div class="content-box" ng-repeat="project in projects">
    <div class="ribbon-container">
-      <a href="partials/projects/project1.html">Project 1</a>
+      <a href="partials/projects/project1.html">{{project.name}}</a>
    </div>
+   <div class="language-tag" ng-repeat="language in languages">{{language}}</div>
 </div>
