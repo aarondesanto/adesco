@@ -26,13 +26,3 @@ app.config(function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
 
 });
-
-app.controller('mainControl', function($scope) {
-
-  $scope.projects = [
-    { name: "Project 1" },
-    { name: "Project 2" }
-  ];
-  $scope.languages = ["HTML", "CSS", "JS", "Angular", "jQuery"];
-
-});
