@@ -1,0 +1,6 @@
+TODO:
+
+nav bar scaling on all screen sizes
+nav bar slide up on scroll down
+ensure error page is scaled for all screen sizes
+entire portfolio page needs scaled for all screen sizes

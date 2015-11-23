@@ -20,6 +20,7 @@ body {
 }
 /* Start of nav bar styles */
 nav {
+  z-index: 5;
   overflow: visible;
   position: fixed;
   top: 0;
@@ -107,7 +108,7 @@ footer {
 }
 /*  End of main icon font styles  */
 
-.error-text-one, .error-text-three, .headshotWrapper, .homeLinksWrapper, .github-linkedin-wrapper, .content-box {
+.main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeLinksWrapper, .github-linkedin-wrapper, .content-box {
   overflow: visible; /* Part 2 of overflow control (this ensures that shadows display properly when they spill over borders) */
 }
 
@@ -185,14 +186,34 @@ footer {
   text-decoration: none;
   color: #444;
 }
-/* End of entry page styles */
+/* End of Entry Page Styles */
+
+/* Start of Portfolio Styles */
+.main-port {
+  width: 65%;
+  margin: 0 auto;
+}
+.project-thumb {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.project-desc {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  width: 90%;
+  border-top: 1px solid #000;
+}
+/* End of Portfolio Styles */
 
 /* Start of Ribbon Style Banner */
 .content-box {
   position: relative;
   display: inline-block;
   overflow: visible;
-  width: 400px;
+  vertical-align: top;
+  width: 300px;
   height: 400px;
   margin: 50px 50px 0 50px;
   background-color: gray;
@@ -239,6 +260,7 @@ footer {
   height: 58px;
   margin-left: 29px;
   padding: 20px;
+  font-size: 1.8em;
   color: #fff; /* Color 5 */
   text-decoration: none;
   background-color: #D00090; /* Color 1 */
@@ -278,11 +300,10 @@ footer {
 
 .language-tag {
   position: relative;
-  z-index: -2;
   top: 50%;
   left: 100%;
   height: 20px;
-  width: 50px;
+  width: 65px;
   margin-bottom: 3px;
   border: 2px solid #FFF;
   padding-top: 2px;

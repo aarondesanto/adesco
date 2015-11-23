@@ -10,9 +10,13 @@
 
 <h1>Portfolio</h1>
 
-<div class="content-box" ng-repeat="project in projects">
-   <div class="ribbon-container">
-      <a href="partials/projects/project1.html">{{project.name}}</a>
-   </div>
-   <div class="language-tag" ng-repeat="language in languages">{{language}}</div>
-</div>
+<main class="main-port">
+  <div class="content-box" ng-repeat="project in projects">
+     <div class="ribbon-container">
+        <a href="{{project.link}}">{{project.name}}</a>
+     </div>
+     <div class="language-tag" ng-repeat="language in project.langs">{{language}}</div>
+     <div class="project-thumb"><img src="http://placehold.it/100x100" alt="{{project.alt}}" /></div>
+     <div class="project-desc">{{project.content}}</div>
+  </div>
+</main>
