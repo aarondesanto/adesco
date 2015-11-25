@@ -204,13 +204,15 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
 
 /* Start of Portfolio Styles */
 .main-port {
-  width: 65%;
+  width: 90%;
   margin: 5% auto;
+  padding-top: 22%;
+  padding-bottom: 10%;
 }
 .language-tag {
   position: relative;
-  top: 50%;
-  left: 100%;
+  top: 60%;
+  left: 85%;
   height: 20px;
   width: 65px;
   margin-bottom: 3px;
@@ -238,22 +240,21 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
   font-size: 1.5em;
   color: #FFF;
 }
-/* End of Portfolio Styles */
-
-/* Start of Ribbon Style Banner */
 .content-box {
   position: relative;
   display: inline-block;
   overflow: visible;
   vertical-align: top;
-  width: 300px;
+  width: 250px;
   height: 400px;
-  margin: 0 50px 50px 50px;
+  margin: 15px 15px 5px 5px;
   background-color: rgba(0, 0, 0, 0.5);;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+/* Start of Ribbon Style Banner */
 .ribbon-container {
   position: absolute;
   overflow: visible;
@@ -330,6 +331,23 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
   border-bottom: 29px solid #E80CA8; /* Color 2 */
 }
 /* End of Ribbon Style Banner */
+/* End of Portfolio Styles */
+
+/* Start of mobile landscape media query */
+@media (max-height: 320px) and (orientation: landscape) {
+  nav ul li {
+    padding-top: 1%;
+  }
+  .main-port {
+    width: 93%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+  }
+  .content-box {
+    margin: 15px 32px 5px 5px;
+  }
+}
+/* End of mobile landscape media query */
 
 /* Start of tablet width media query */
 @media (min-width: 481px) {
@@ -337,14 +355,20 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
 }
 /* End of tablet width media query */
 
-/* Start of medium width media query */
-@media (min-width: 900px) {
+/* Start of tablet width media query */
+@media (min-width: 769px) {
 
 }
-/* End of medium width media query */
+/* End of tablet width media query */
+
+/* Start of tablet width media query */
+@media (min-width: 993px) {
+
+}
+/* End of tablet width media query */
 
 /* Start of Large Wide media query */
-@media (min-width: 1440px) {
+@media (min-width: 1201px) {
 	[class^="icon-"] {  /* icon font rule */
 	  font-size: 5em;
 	}
@@ -352,39 +376,18 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
 	  opacity: 1;
 	}
   nav {
-    z-index: 5;
-    overflow: visible;
-    position: fixed;
-    top: 0;
     height: 7%;
-    width: 100%;
-    background-color: #346;
-  }
-  nav ul {
-    overflow: inherit;
-    height: 100%;
   }
   nav ul li {
-    overflow: inherit;
-    display: inline-block;
-    height: 100%;
     width: 19%;
     padding: 0;
-    vertical-align: top;
   }
   nav ul li:hover {
     background-color: #568;
   }
   nav ul li a {
-    overflow: inherit;
-    display: block;
-    height: 70%;
     padding-top: 5%;
-    text-align: center;
     font-size: 2.5em;
-    font-family: 'Eurofurence';
-    color: #FFF;
-    text-decoration: none;
   }
   footer {
     top: 95%;
@@ -444,5 +447,134 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
     font-size: 2em;
     text-shadow: 2px 2px 10px #333;
   }
+  /* Start of Portfolio Styles */
+  .main-port {
+    width: 65%;
+    margin: 5% auto;
+    padding: 0;
+  }
+  .language-tag {
+    position: relative;
+    top: 50%;
+    left: 100%;
+    height: 20px;
+    width: 65px;
+    margin-bottom: 3px;
+    border: 2px solid #FFF;
+    padding-top: 2px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 4px #666;
+  }
+  .project-thumb {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+  .project-desc {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 90%;
+    border-top: 1px solid #FFF;
+    padding-top: 5%;
+    font-size: 1.5em;
+    color: #FFF;
+  }
+
+  /* Start of Ribbon Style Banner */
+  .content-box {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    vertical-align: top;
+    width: 300px;
+    height: 400px;
+    margin: 0 50px 50px 50px;
+    background-color: rgba(0, 0, 0, 0.5);;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .ribbon-container {
+    position: absolute;
+    overflow: visible;
+    top: 15px;
+    right: -20px;
+  }
+  .ribbon-container:before { /* Ribbon Shadow Part 1 (fork) */
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-top: 29px solid rgba(0, 0, 0, 0.3); /* Color 4 */
+    border-right: 29px solid rgba(0, 0, 0, 0.3); /* Color 4 */
+    border-bottom: 29px solid rgba(0, 0, 0, 0.3); /* Color 4 */
+    border-left: 29px solid transparent;
+  }
+  .ribbon-container:after { /* Ribbon Shadow Part 2 (straight) */
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 58px;
+    right: 3px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.3); /* Color 4 */
+  }
+  .ribbon-container a {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: block;
+    position: relative;
+    overflow: visible;
+    height: 58px;
+    margin-left: 29px;
+    padding: 20px;
+    font-size: 1.8em;
+    color: #fff; /* Color 5 */
+    text-decoration: none;
+    background-color: #D00090; /* Color 1 */
+  }
+  .ribbon-container a:after { /* Ribbon Fold */
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border-top: 20px solid #880048; /* Color 3 */
+    border-right: 20px solid transparent;
+  }
+  .ribbon-container a:before { /* Ribbon Fork */
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -29px;
+    height: 0;
+    width: 0;
+    border-top: 29px solid #D00090; /* Color 1 */
+    border-bottom: 29px solid #D00090; /* Color 1 */
+    border-right: 29px solid transparent;
+    border-left: 29px solid transparent;
+  }
+  .ribbon-container a:hover { /* Change Main Ribbon Color on Hover */
+    background-color: #E80CA8; /* Color 2 */
+  }
+  .ribbon-container a:hover:before { /* Change Fork Color on Hover */
+    border-top: 29px solid #E80CA8; /* Color 2 */
+    border-bottom: 29px solid #E80CA8; /* Color 2 */
+  }
+  /* End of Ribbon Style Banner */
+  /* End of Portfolio Styles */
 }
 /* End of Large Wide media query */
