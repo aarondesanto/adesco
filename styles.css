@@ -24,7 +24,7 @@ nav {
   overflow: visible;
   position: fixed;
   top: 0;
-  height: 7%;
+  height: 12%;
   width: 100%;
   background-color: #346;
 }
@@ -36,24 +36,27 @@ nav ul li {
   overflow: inherit;
   display: inline-block;
   height: 100%;
-  width: 19%;
+  width: 28%;
+  padding-top: 6%;
   vertical-align: top;
-}
-nav ul li:hover {
-  background-color: #568;
 }
 nav ul li:active {
   box-shadow: inset 1px 1px 8px 1px #112;
   -moz-box-shadow: inset 1px 1px 8px 1px #112;
   -webkit-box-shadow: inset 1px 1px 8px 1px #112;
 }
+.list-left {
+  width: 22%;
+}
+.list-right {
+  width: 18%;
+}
 nav ul li a {
   overflow: inherit;
   display: block;
   height: 70%;
-  padding-top: 5%;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Eurofurence';
   color: #FFF;
   text-decoration: none;
@@ -113,7 +116,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
 }
 
 /*  Start of 404 page styles  */
-.error-page {
+.error-main {
   height: 100%;
 }
 .dim-the-page {
@@ -348,6 +351,41 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
 	[class^="icon-"]:hover {
 	  opacity: 1;
 	}
+  nav {
+    z-index: 5;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    height: 7%;
+    width: 100%;
+    background-color: #346;
+  }
+  nav ul {
+    overflow: inherit;
+    height: 100%;
+  }
+  nav ul li {
+    overflow: inherit;
+    display: inline-block;
+    height: 100%;
+    width: 19%;
+    padding: 0;
+    vertical-align: top;
+  }
+  nav ul li:hover {
+    background-color: #568;
+  }
+  nav ul li a {
+    overflow: inherit;
+    display: block;
+    height: 70%;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Eurofurence';
+    color: #FFF;
+    text-decoration: none;
+  }
   footer {
     top: 95%;
     font-size: 1.5em;
