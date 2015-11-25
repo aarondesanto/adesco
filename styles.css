@@ -108,7 +108,7 @@ footer {
 }
 /*  End of main icon font styles  */
 
-.main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeLinksWrapper, .github-linkedin-wrapper, .content-box {
+footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeLinksWrapper, .github-linkedin-wrapper, .content-box {
   overflow: visible; /* Part 2 of overflow control (this ensures that shadows display properly when they spill over borders) */
 }
 
@@ -317,23 +317,23 @@ footer {
 }
 /* End of Ribbon Style Banner */
 
-/* Start of Large Wide media query */
-@media (min-width: 1440px) {
+/* Start of tablet width media query */
+@media (min-width: 7000px) {
 	[class^="icon-"] {  /* icon font rule */
-	  font-size: 5em;
+	  font-size: 4em;
 	}
 	[class^="icon-"]:hover {
 	  opacity: 1;
 	}
   footer {
-    top: 95%;
+    top: 94%;
     font-size: 1.5em;
     text-shadow: 3px 3px 7px rgba(50, 50, 50, 0.5);
     color: rgba(225, 225, 255, 0.5);
     background-color: rgba(33, 66, 99, 0);
   }
   .headshotWrapper {
-    width: 15%;
+    width: 20%;
     margin-top: 8%;
   }
   .mainHeadshot {
@@ -349,7 +349,7 @@ footer {
     display: inline;
     margin: 1% 5%;
     padding: 0;
-    font-size: 4em;
+    font-size: 3.5em;
     text-shadow: 2px 2px 2px #666;
     background-color: rgba(0, 0, 0, 0);
 		box-shadow: none;
@@ -364,9 +364,80 @@ footer {
 		text-shadow: -1px -1px 3px #000;
   }
   .github-linkedin-wrapper {
-    width: 20%;
+    width: 30%;
     margin: 8% auto 0 auto;
     padding-top: 3%;
+  }
+}
+/* End of tablet width media query */
+
+/* Start of medium width media query */
+@media (min-width: 9000px) {
+	[class^="icon-"] {  /* icon font rule */
+	  font-size: 4em;
+	}
+	[class^="icon-"]:hover {
+	  opacity: 1;
+	}
+  footer {
+    top: 94%;
+    font-size: 1.5em;
+    text-shadow: 3px 3px 7px rgba(50, 50, 50, 0.5);
+    color: rgba(225, 225, 255, 0.5);
+    background-color: rgba(33, 66, 99, 0);
+  }
+  .headshotWrapper {
+    width: 20%;
+    margin-top: 8%;
+  }
+  .mainHeadshot {
+    box-shadow: 2px 3px 1px #666;
+    -moz-box-shadow: 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 3px 1px #666;
+  }
+  .homeLinksWrapper {
+    width: 60%;
+    margin: 5% auto;
+  }
+  .homeLinks {
+    display: inline;
+    margin: 1% 5%;
+    padding: 0;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 2px #666;
+    background-color: rgba(0, 0, 0, 0);
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+  }
+  .homeLinks:hover {
+    text-shadow: 4px 4px 4px #444;
+  }
+  .homeLinks:active {
+	  color: #FFF;
+		text-shadow: -1px -1px 3px #000;
+  }
+  .github-linkedin-wrapper {
+    width: 30%;
+    margin: 8% auto 0 auto;
+    padding-top: 3%;
+  }
+}
+/* End of medium width media query */
+
+/* Start of Large Wide media query */
+@media (min-width: 1440px) {
+	[class^="icon-"] {  /* icon font rule */
+	  font-size: 5em;
+	}
+  footer {
+    top: 95%;
+  }
+  .headshotWrapper {
+    width: 15%;
+  }
+  .github-linkedin-wrapper {
+    width: 20%;
   }
 }
 /* End of Large Wide media query */
