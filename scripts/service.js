@@ -4,42 +4,52 @@ app.factory('portfolioSrv', function() {
   return { projects: [
       {
         name: "Contentment",
-        content: "Lightweight jQuery plugin for generating a specified amount of garbage characters or words.",
+        description: "jQuery plugin for generating a specified amount of garbage characters or words.",
+        reqs: "Requirements: Create a chainable jQuery plugin.",
         langs: ["JavaScript", "jQuery"],
-        link: 'https://github.com/aarondesanto/Contentment',
-        thumb: 'images/thumb1.jpg',
+        fullview: 'partials/contentment.html',
+        gitlink: 'https://github.com/aarondesanto/Contentment',
+        thumb: 'images/contentment.jpg',
         alt: 'TEXT'
       },
       {
         name: "Seats",
-        content: "Movie theater seat reservation app.",
+        description: "Simple, dynamically updated theater seat reservation app.",
+        reqs: "Requirements: Create a responsive interface for reserving seats at a theater.",
         langs: ["HTML", "CSS", "JavaScript", "jQuery"],
-        link: 'https://github.com/aarondesanto/seats',
-        thumb: 'images/thumb1.jpg',
+        fullview: 'partials/seats.html',
+        gitlink: 'https://github.com/aarondesanto/seats',
+        thumb: 'images/seats.jpg',
         alt: 'TEXT'
       },
       {
         name: "ShoppStar",
-        content: "Simple shopping list built with Angular.",
+        description: "Simple shopping list built including search and remove item functions.",
+        reqs: "Requirements: Create a list which includes item names and prices, a total, and can be searched by name or price.",
         langs: ["HTML", "CSS", "JavaScript", "Angular", "jQuery"],
-        link: 'https://github.com/aarondesanto/ShopWithAngular',
-        thumb: 'images/thumb1.jpg',
+        fullview: 'partials/shoppinglist.html',
+        gitlink: 'https://github.com/aarondesanto/ShopWithAngular',
+        thumb: 'images/shoppinglist.jpg',
         alt: 'TEXT'
       },
       {
         name: "Shapes Thing",
-        content: "Some Content",
+        description: "Some Content",
+        reqs: "The requirements for this project were ",
         langs: ["HTML", "CSS"],
-        link: 'https://github.com/aarondesanto/',
-        thumb: 'images/thumb1.jpg',
+        fullview: 'partials/SHAPESTHING.html',
+        gitlink: 'https://github.com/aarondesanto/',
+        thumb: 'images/SHAPESTHING.jpg',
         alt: 'TEXT'
       },
       {
         name: "Animation",
-        content: "Some Content",
+        description: "Some Content",
+        reqs: "The requirements for this project were ",
         langs:  ["HTML", "CSS", "JavaScript", "jQuery"],
-        link: 'https://github.com/aarondesanto/',
-        thumb: 'images/thumb1.jpg',
+        fullview: 'partials/ANIMATIONTHING.html',
+        gitlink: 'https://github.com/aarondesanto/',
+        thumb: 'images/ANIMATIONTHING.jpg',
         alt: 'TEXT'
       }
     ]

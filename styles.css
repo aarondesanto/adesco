@@ -237,8 +237,32 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
   width: 90%;
   border-top: 1px solid #FFF;
   padding-top: 5%;
-  font-size: 1.5em;
+  font-size: 1.6em;
+  line-height: 1.2em;
   color: #FFF;
+}
+.project-reqs {
+  position: absolute;
+  overflow-y: auto;
+  top: 60%;
+  left: 5%;
+  width: 75%;
+  height: 20%;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 1.6em;
+  line-height: 1.2em;
+  color: #FFF;
+}
+.project-git-link {
+  position: absolute;
+  top: 92%;
+  left: 5%;
+  font-size: 1.2em;
+  color: #FFF;
+  text-align: center;
 }
 .content-box {
   position: relative;
@@ -334,7 +358,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
 /* End of Portfolio Styles */
 
 /* Start of mobile landscape media query */
-@media (max-height: 320px) and (orientation: landscape) {
+@media (max-height: 480px) and (orientation: landscape) {
   nav ul li {
     padding-top: 1%;
   }
@@ -350,10 +374,33 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
 /* End of mobile landscape media query */
 
 /* Start of tablet width media query */
-@media (min-width: 481px) {
-
+@media (min-width: 481px) and (orientation: portrait) {
+  .main-port {
+    width: 60%;
+    padding-top: 15%;
+    padding-bottom: 5%;
+  }
+  .content-box {
+    margin: 15px auto;
+  }
 }
 /* End of tablet width media query */
+
+/* Start of mobile landscape media query */
+@media (max-height: 640px) and (orientation: landscape) {
+  nav ul li {
+    padding-top: 1%;
+  }
+  .main-port {
+    width: 93%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+  }
+  .content-box {
+    margin: 15px 32px 5px 5px;
+  }
+}
+/* End of mobile landscape media query */
 
 /* Start of tablet width media query */
 @media (min-width: 769px) {
@@ -481,7 +528,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
     width: 90%;
     border-top: 1px solid #FFF;
     padding-top: 5%;
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #FFF;
   }
 
@@ -538,7 +585,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
     height: 58px;
     margin-left: 29px;
     padding: 20px;
-    font-size: 1.8em;
+    font-size: 2em;
     color: #fff; /* Color 5 */
     text-decoration: none;
     background-color: #D00090; /* Color 1 */

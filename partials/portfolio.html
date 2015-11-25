@@ -10,13 +10,15 @@
 <main class="main-port">
   <div class="content-box" ng-repeat="project in projects">
      <div class="ribbon-container">
-        <a href="{{project.link}}">{{project.name}}</a>
+        <a href="{{project.fullview}}">{{project.name}}</a>
      </div>
      <div class="language-tag" ng-repeat="language in project.langs">{{language}}</div>
      <div class="project-thumb">
        <img src="http://placehold.it/100x100" title="{{project.alt}}" alt="{{project.alt}}" />
      </div>
-     <div class="project-desc">{{project.content}}</div>
+     <div class="project-desc">{{project.description}}</div>
+     <div class="project-reqs">{{project.reqs}}</div>
+     <a class="project-git-link" href="{{project.gitlink}}">View this project on Github</a>
   </div>
 </main>
 
