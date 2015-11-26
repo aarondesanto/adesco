@@ -8,11 +8,11 @@
 </nav>
 
 <main class="main-port">
-  <div class="content-box" ng-repeat="project in projects">
+  <div class="each-project" ng-repeat="project in projects">
      <div class="ribbon-container">
         <a href="{{project.fullview}}">{{project.name}}</a>
      </div>
-     <div class="language-tag" ng-repeat="language in project.langs">{{language}}</div>
+     <div class="project-lang" ng-repeat="language in project.langs">{{language}}</div>
      <div class="project-thumb">
        <img src="http://placehold.it/100x100" title="{{project.alt}}" alt="{{project.alt}}" />
      </div>

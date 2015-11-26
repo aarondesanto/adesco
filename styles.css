@@ -111,7 +111,7 @@ footer {
 }
 /*  End of main icon font styles  */
 
-footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeLinksWrapper, .github-linkedin-wrapper, .content-box {
+footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home-links-wrapper, .github-linkedin-wrapper, .each-project {
   overflow: visible; /* Part 2 of overflow control (this ensures that shadows display properly when they spill over borders) */
 }
 
@@ -151,12 +151,12 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
 /*  End of 404 page styles  */
 
 /*  Start of entry page styles  */
-.headshotWrapper {
+.headshot-wrapper {
   width: 50%;
   margin: 0 auto;
   margin-top: 10%;
 }
-.mainHeadshot {
+.main-headshot {
   max-height: 100%;
   max-width: 100%;
   border-radius: 50%;
@@ -164,12 +164,12 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
   -moz-box-shadow: 4px 5px 2px #888;
   -webkit-box-shadow: 4px 5px 2px #888;
 }
-.homeLinksWrapper {
+.home-links-wrapper {
   width: 45%;
   margin: 8% auto;
   text-align: center;
 }
-.homeLinks {
+.home-links {
   display: block;
   margin: 7px 0;
   border-radius: 45px;
@@ -183,7 +183,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
 	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-.homeLinks:active {
+.home-links:active {
   text-shadow: 4px 4px 4px #444;
 	box-shadow: none;
 	-moz-box-shadow: none;
@@ -209,7 +209,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
   padding-top: 22%;
   padding-bottom: 10%;
 }
-.language-tag {
+.project-lang {
   position: relative;
   top: 60%;
   left: 85%;
@@ -264,7 +264,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
   color: #FFF;
   text-align: center;
 }
-.content-box {
+.each-project {
   position: relative;
   display: inline-block;
   overflow: visible;
@@ -358,16 +358,21 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
 /* End of Portfolio Styles */
 
 /* Start of mobile landscape media query */
-@media (max-height: 480px) and (orientation: landscape) {
+@media (min-height: 320px) and (orientation: landscape) {
   nav ul li {
     padding-top: 1%;
+  }
+  footer {
+    top: 94%;
+    height: 6%;
+    padding-top: 2px;
   }
   .main-port {
     width: 93%;
     padding-top: 4%;
     padding-bottom: 5%;
   }
-  .content-box {
+  .each-project {
     margin: 15px 32px 5px 5px;
   }
 }
@@ -380,30 +385,33 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
     padding-top: 15%;
     padding-bottom: 5%;
   }
-  .content-box {
+  .each-project {
     margin: 15px auto;
   }
 }
 /* End of tablet width media query */
 
 /* Start of mobile landscape media query */
-@media (max-height: 640px) and (orientation: landscape) {
+@media (min-height: 640px) and (orientation: landscape) {
+  nav {
+    height: 8%;
+  }
   nav ul li {
-    padding-top: 1%;
+    padding-top: 2%;
   }
   .main-port {
     width: 93%;
     padding-top: 4%;
     padding-bottom: 5%;
   }
-  .content-box {
+  .each-project {
     margin: 15px 32px 5px 5px;
   }
 }
 /* End of mobile landscape media query */
 
 /* Start of tablet width media query */
-@media (min-width: 769px) {
+@media (min-width: 769px) and (orientation: portrait) {
 
 }
 /* End of tablet width media query */
@@ -443,20 +451,20 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
     color: rgba(225, 225, 255, 0.5);
     background-color: rgba(33, 66, 99, 0);
   }
-  .headshotWrapper {
+  .headshot-wrapper {
     width: 15%;
     margin-top: 8%;
   }
-  .mainHeadshot {
+  .main-headshot {
     box-shadow: 2px 3px 1px #666;
     -moz-box-shadow: 2px 3px 1px #666;
     -webkit-box-shadow: 2px 3px 1px #666;
   }
-  .homeLinksWrapper {
+  .home-links-wrapper {
     width: 60%;
     margin: 5% auto;
   }
-  .homeLinks {
+  .home-links {
     display: inline;
     margin: 1% 5%;
     padding: 0;
@@ -467,10 +475,10 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
 		-moz-box-shadow: none;
 		-webkit-box-shadow: none;
   }
-  .homeLinks:hover {
+  .home-links:hover {
     text-shadow: 4px 4px 4px #444;
   }
-  .homeLinks:active {
+  .home-links:active {
 	  color: #FFF;
 		text-shadow: -1px -1px 3px #000;
   }
@@ -494,134 +502,26 @@ footer, .main-port, .error-text-one, .error-text-three, .headshotWrapper, .homeL
     font-size: 2em;
     text-shadow: 2px 2px 10px #333;
   }
-  /* Start of Portfolio Styles */
   .main-port {
     width: 65%;
-    margin: 5% auto;
     padding: 0;
   }
-  .language-tag {
-    position: relative;
+  .project-lang {
     top: 50%;
     left: 100%;
-    height: 20px;
-    width: 65px;
-    margin-bottom: 3px;
-    border: 2px solid #FFF;
-    padding-top: 2px;
-    font-size: 1.3em;
-    font-weight: bold;
-    text-align: center;
-    color: #FFF;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 4px #666;
-  }
-  .project-thumb {
-    position: absolute;
-    top: 5%;
-    left: 5%;
   }
   .project-desc {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    width: 90%;
-    border-top: 1px solid #FFF;
-    padding-top: 5%;
     font-size: 1.8em;
-    color: #FFF;
   }
-
-  /* Start of Ribbon Style Banner */
-  .content-box {
-    position: relative;
-    display: inline-block;
-    overflow: visible;
-    vertical-align: top;
+  .project-reqs {
+    overflow-y: auto;
+    width: 90%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+  }
+  .each-project {
     width: 300px;
-    height: 400px;
     margin: 0 50px 50px 50px;
-    background-color: rgba(0, 0, 0, 0.5);;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
-  .ribbon-container {
-    position: absolute;
-    overflow: visible;
-    top: 15px;
-    right: -20px;
-  }
-  .ribbon-container:before { /* Ribbon Shadow Part 1 (fork) */
-    content: "";
-    display: block;
-    position: absolute;
-    top: 3px;
-    left: 0;
-    height: 0;
-    width: 0;
-    border-top: 29px solid rgba(0, 0, 0, 0.3); /* Color 4 */
-    border-right: 29px solid rgba(0, 0, 0, 0.3); /* Color 4 */
-    border-bottom: 29px solid rgba(0, 0, 0, 0.3); /* Color 4 */
-    border-left: 29px solid transparent;
-  }
-  .ribbon-container:after { /* Ribbon Shadow Part 2 (straight) */
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 58px;
-    right: 3px;
-    height: 3px;
-    background-color: rgba(0, 0, 0, 0.3); /* Color 4 */
-  }
-  .ribbon-container a {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    display: block;
-    position: relative;
-    overflow: visible;
-    height: 58px;
-    margin-left: 29px;
-    padding: 20px;
-    font-size: 2em;
-    color: #fff; /* Color 5 */
-    text-decoration: none;
-    background-color: #D00090; /* Color 1 */
-  }
-  .ribbon-container a:after { /* Ribbon Fold */
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -20px;
-    right: 0;
-    height: 0;
-    width: 0;
-    border-top: 20px solid #880048; /* Color 3 */
-    border-right: 20px solid transparent;
-  }
-  .ribbon-container a:before { /* Ribbon Fork */
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -29px;
-    height: 0;
-    width: 0;
-    border-top: 29px solid #D00090; /* Color 1 */
-    border-bottom: 29px solid #D00090; /* Color 1 */
-    border-right: 29px solid transparent;
-    border-left: 29px solid transparent;
-  }
-  .ribbon-container a:hover { /* Change Main Ribbon Color on Hover */
-    background-color: #E80CA8; /* Color 2 */
-  }
-  .ribbon-container a:hover:before { /* Change Fork Color on Hover */
-    border-top: 29px solid #E80CA8; /* Color 2 */
-    border-bottom: 29px solid #E80CA8; /* Color 2 */
-  }
-  /* End of Ribbon Style Banner */
-  /* End of Portfolio Styles */
 }
 /* End of Large Wide media query */
