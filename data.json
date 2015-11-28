@@ -1,0 +1,68 @@
+[{
+	"name": "Contentment",
+	"description": "jQuery plugin for generating a specified amount of garbage characters or words.",
+	"reqs": "Requirements: Create a chainable jQuery plugin.",
+	"langs": [
+		"JavaScript",
+		"jQuery"
+	],
+	"fullview": "partials/projects/contentment.html",
+	"gitlink": "https://github.com/aarondesanto/Contentment",
+	"thumb": "images/contentment.jpg",
+	"alt": "Contentment"
+}, {
+	"name": "Seats",
+	"description": "Simple, dynamically updated theater seat reservation app.",
+	"reqs": "Requirements: Create a responsive interface for reserving seats at a theater.",
+	"langs": [
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"jQuery"
+	],
+	"fullview": "partials/projects/seats.html",
+	"gitlink": "https://github.com/aarondesanto/seats",
+	"thumb": "images/seats.jpg",
+	"alt": "Seats"
+}, {
+	"name": "ShopStar",
+	"description": "Simple shopping list including search and remove item functions.",
+	"reqs": "Requirements: Create a list which includes item names and prices, a total, and can be searched by name or price.",
+	"langs": [
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"Angular",
+		"jQuery"
+	],
+	"fullview": "partials/projects/shoppinglist.html",
+	"gitlink": "https://github.com/aarondesanto/ShopWithAngular",
+	"thumb": "images/shoppinglist.jpg",
+	"alt": "ShopStar"
+}, {
+	"name": "Shapes Thing",
+	"description": "Some Content",
+	"reqs": "The requirements for this project were ",
+	"langs": [
+		"HTML",
+		"CSS"
+	],
+	"fullview": "partials/projects/SHAPESTHING.html",
+	"gitlink": "https://github.com/aarondesanto/",
+	"thumb": "images/SHAPESTHING.jpg",
+	"alt": "SHAPES THING"
+}, {
+	"name": "Animation",
+	"description": "Some Content",
+	"reqs": "The requirements for this project were ",
+	"langs": [
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"jQuery"
+	],
+	"fullview": "partials/projects/ANIMATIONTHING.html",
+	"gitlink": "https://github.com/aarondesanto/",
+	"thumb": "images/ANIMATIONTHING.jpg",
+	"alt": "ANIMATION THING"
+}]

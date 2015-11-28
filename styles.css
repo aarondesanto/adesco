@@ -27,6 +27,7 @@ nav {
   height: 12%;
   width: 100%;
   background-color: #346;
+  box-shadow: 0 3px 10px #333;
 }
 nav ul {
   overflow: inherit;
@@ -357,8 +358,23 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 /* End of Ribbon Style Banner */
 /* End of Portfolio Styles */
 
+/* Start of galaxy media query */
+@media only screen and (min-width: 360px) {
+  .each-project {
+    margin: 15px 32px 5px 25px;
+  }
+}
+/* End of galaxy media query */
+
 /* Start of mobile landscape media query */
-@media (min-height: 320px) and (orientation: landscape) {
+@media only screen and (max-width: 641px) and (orientation: landscape) {
+  [class^="icon-"] {
+    font-size: 3em;
+    margin: 0 10px;
+  }
+  nav {
+    height: 15%;
+  }
   nav ul li {
     padding-top: 1%;
   }
@@ -367,37 +383,22 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
     height: 6%;
     padding-top: 2px;
   }
-  .main-port {
-    width: 93%;
-    padding-top: 4%;
-    padding-bottom: 5%;
+  .headshot-wrapper {
+    width: 35%;
+    margin: 0 auto 0 5%;
+    margin-top: 3%;
   }
-  .each-project {
-    margin: 15px 32px 5px 5px;
+  .home-links-wrapper {
+    position: absolute;
+    top: -10%;
+    left: 48%;
+    width: 40%;
   }
-}
-/* End of mobile landscape media query */
-
-/* Start of tablet width media query */
-@media (min-width: 481px) and (orientation: portrait) {
-  .main-port {
-    width: 60%;
-    padding-top: 15%;
-    padding-bottom: 5%;
-  }
-  .each-project {
-    margin: 15px auto;
-  }
-}
-/* End of tablet width media query */
-
-/* Start of mobile landscape media query */
-@media (min-height: 640px) and (orientation: landscape) {
-  nav {
-    height: 8%;
-  }
-  nav ul li {
-    padding-top: 2%;
+  .github-linkedin-wrapper {
+    position: absolute;
+    top: 35%;
+    left: 48%;
+    padding-top: 3%;
   }
   .main-port {
     width: 93%;
@@ -405,25 +406,16 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
     padding-bottom: 5%;
   }
   .each-project {
-    margin: 15px 32px 5px 5px;
+    margin: 15px 7% 5px 5px;
+  }
+  .error-text-one {
+    padding-top: 10%;
   }
 }
 /* End of mobile landscape media query */
 
-/* Start of tablet width media query */
-@media (min-width: 769px) and (orientation: portrait) {
-
-}
-/* End of tablet width media query */
-
-/* Start of tablet width media query */
-@media (min-width: 993px) {
-
-}
-/* End of tablet width media query */
-
-/* Start of Large Wide media query */
-@media (min-width: 1201px) {
+/* Start of large PC media query */
+@media only screen and (min-width: 1200px) {
 	[class^="icon-"] {  /* icon font rule */
 	  font-size: 5em;
 	}
@@ -524,4 +516,4 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
     margin: 0 50px 50px 50px;
   }
 }
-/* End of Large Wide media query */
+/* End of large PC media query */
