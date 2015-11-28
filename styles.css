@@ -27,7 +27,7 @@ nav {
   height: 12%;
   width: 100%;
   background-color: #346;
-  box-shadow: 0 3px 10px #333;
+  box-shadow: 0 0 10px 4px #333;
 }
 nav ul {
   overflow: inherit;
