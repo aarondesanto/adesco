@@ -21,24 +21,24 @@ body {
 /* Start of nav bar styles */
 nav {
   z-index: 5;
-  overflow: visible;
   position: fixed;
   top: 0;
   height: 12%;
   width: 100%;
+  overflow: visible;
   background-color: #346;
   box-shadow: 0 0 10px 4px #333;
 }
 nav ul {
-  overflow: inherit;
   height: 100%;
+  overflow: inherit;
 }
 nav ul li {
-  overflow: inherit;
   display: inline-block;
   height: 100%;
   width: 28%;
   padding-top: 6%;
+  overflow: inherit;
   vertical-align: top;
 }
 nav ul li:active {
@@ -53,9 +53,9 @@ nav ul li:active {
   width: 18%;
 }
 nav ul li a {
-  overflow: inherit;
   display: block;
   height: 70%;
+  overflow: inherit;
   text-align: center;
   font-size: 2em;
   font-family: 'Eurofurence';
@@ -205,13 +205,14 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 
 /* Start of me page styles */
 .me-wrapper {
-  overflow-x: hidden;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 .me-wrapper:after { /* Covers the screen portion revealed by */
-  content: "";      /* rotating diag-three. */
+  content: "";      /* rotating diag-enjoy. Remove?? */
   position: relative;
+  z-index: -2;
   bottom: -40px;
   right: 0;
   height: 0;
@@ -220,24 +221,24 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   border-style: solid;
   border-color: #333;
 }
-.main-diag {
+.diag {
   position: relative;
-  overflow-x: hidden;
   top: 6%;
   left: -50px;
-  height: 60%;
+  height: 57%;
   width: 130%;
+  overflow-x: hidden;
   transform: rotate(-8deg);
   -webkit-transform: rotate(-8deg);
   -webkit-backface-visibility: hidden;
 }
 .diag-head {
   position: relative;
-  overflow-x: hidden;
   top: 0;
   height: 10%;
   width: 110%;
   padding: 2% 0;
+  overflow-x: hidden;
   background-color: rgba(0, 0, 0, 0.4);
 }
 .diag-head h1 {
@@ -249,14 +250,20 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 .top-diag-head {
   padding-top: 8%;
 }
-.diag-one {
+.diag-me {
   background-color: #50BBFF;
 }
-.diag-two {
+.diag-write {
+  height: 55%;
   background-color: #458;
 }
-.diag-three {
+.diag-enjoy {
+  height: 48%;
+  overflow: hidden;
   background-color: #333;
+}
+.diag-enjoy div {
+  height: 12%;
 }
 .diag-content {
   margin-top: 6%;
@@ -266,7 +273,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 }
 .diag-content p {
   padding: 5px 17%;
-  font-size: 1.8em;
+  font-size: 1.9em;
   color: #FFF;
 }
 /* End of me page styles */
@@ -312,7 +319,6 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 }
 .project-reqs {
   position: absolute;
-  overflow-y: auto;
   top: 60%;
   left: 5%;
   width: 75%;
@@ -321,6 +327,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   border-bottom: 1px solid #FFF;
   padding-top: 5%;
   padding-bottom: 5%;
+  overflow-y: auto;
   font-size: 1.6em;
   line-height: 1.2em;
   color: #FFF;
@@ -336,11 +343,11 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 .each-project {
   position: relative;
   display: inline-block;
-  overflow: visible;
-  vertical-align: top;
   width: 250px;
   height: 400px;
   margin: 15px 15px 5px 5px;
+  overflow: visible;
+  vertical-align: top;
   background-color: rgba(0, 0, 0, 0.5);;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -350,7 +357,6 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 /* Start of Ribbon Style Banner */
 .ribbon-container {
   position: absolute;
-  overflow: visible;
   top: 15px;
   right: -20px;
 }
@@ -383,10 +389,10 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   -webkit-box-sizing: border-box;
   display: block;
   position: relative;
-  overflow: visible;
   height: 58px;
   margin-left: 29px;
   padding: 20px;
+  overflow: visible;
   font-size: 1.8em;
   color: #fff; /* Color 5 */
   text-decoration: none;
@@ -428,6 +434,18 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 
 /* Start of galaxy media query */
 @media only screen and (min-width: 360px) {
+  .diag-me {
+    height: 66%;
+  }
+  .diag-write {
+    height: 60%;
+  }
+  .diag-enjoy {
+    height: 53%;
+  }
+  .diag-enjoy div {
+    height: 12%;
+  }
   .each-project {
     margin: 15px 32px 5px 25px;
   }
@@ -574,10 +592,10 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
     font-size: 1.8em;
   }
   .project-reqs {
-    overflow-y: auto;
     width: 90%;
     padding-top: 3%;
     padding-bottom: 5%;
+    overflow-y: auto;
   }
   .each-project {
     width: 300px;
