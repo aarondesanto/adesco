@@ -10,7 +10,7 @@ html {
   height: 100%;
   width: 100%;
   font-size: 12px;
-  font-family: 'eurofurence', arial;
+  font-family: "eurofurence", arial;
 }
 body {
   height: 100%;
@@ -58,7 +58,7 @@ nav ul li a {
   overflow: inherit;
   text-align: center;
   font-size: 2em;
-  font-family: 'Eurofurence';
+  font-family: "eurofurence";
   color: #FFF;
   text-decoration: none;
 }
@@ -79,17 +79,17 @@ footer {
 /* End of tag-specific styles */
 
 @font-face { /* Main text font */
-	font-family: 'eurofurence';
-  src: url('fonts/eurofurence.ttf');
+	font-family: "eurofurence";
+  src: url("fonts/eurofurence.ttf");
 }
 
 /*  Start of main icon font styles  */
 @font-face {
-	font-family: 'icomoon';
-	src: url('fonts/icomoon.ttf?48bg3v');
+	font-family: "icomoon";
+	src: url("fonts/icomoon.ttf?48bg3v");
 }
 [class^="icon-"] {
-	font-family: 'icomoon';
+	font-family: "icomoon";
 	 -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   opacity: 0.5;

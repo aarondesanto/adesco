@@ -1,12 +1,12 @@
-var app = angular.module('homeModule');
+var app = angular.module("homeModule");
 
-app.factory('portfolioSrv', function($http) {
+app.factory("portfolioSrv", function($http) {
 
   var projects = { maindata: null };
-  
+
   $http({
-    method: 'GET',
-    url: 'data.json'
+    method: "GET",
+    url: "data.json"
   }).then(function(response) {
     projects.maindata = response.data;
   }, function(response) {

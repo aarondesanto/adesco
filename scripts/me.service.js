@@ -1,8 +1,8 @@
-var app = angular.module('homeModule');
+var app = angular.module("homeModule");
 
-app.factory('meSrv', function($http) {
+app.factory("meSrv", function($http) {
 
-  var info = '';
+  var info = "";
 
   return {
     getInfo: function() {

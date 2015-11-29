@@ -1,6 +1,6 @@
-var app = angular.module('homeModule');
+var app = angular.module("homeModule");
 
-app.controller('mainControl', function($scope, meSrv, portfolioSrv) {
+app.controller("mainControl", function($scope, meSrv, portfolioSrv) {
 
   $scope.projects = portfolioSrv.getProjects();
 
