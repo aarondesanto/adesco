@@ -42,9 +42,9 @@ nav ul li {
   vertical-align: top;
 }
 nav ul li:active {
-  box-shadow: inset 1px 1px 8px 1px #112;
-  -moz-box-shadow: inset 1px 1px 8px 1px #112;
   -webkit-box-shadow: inset 1px 1px 8px 1px #112;
+     -moz-box-shadow: inset 1px 1px 8px 1px #112;
+          box-shadow: inset 1px 1px 8px 1px #112;
 }
 .list-left {
   width: 22%;
@@ -90,7 +90,7 @@ footer {
 }
 [class^="icon-"] {
 	font-family: 'icomoon';
-	-webkit-font-smoothing: antialiased;
+	 -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   opacity: 0.5;
   font-size: 4em;
@@ -112,7 +112,7 @@ footer {
 }
 /*  End of main icon font styles  */
 
-footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home-links-wrapper, .github-linkedin-wrapper, .each-project {
+footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home-links-wrapper, .github-linkedin-wrapper, .each-project, .ribbon-container {
   overflow: visible; /* Part 2 of overflow control (this ensures that shadows display properly when they spill over borders) */
 }
 
@@ -161,9 +161,9 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   max-height: 100%;
   max-width: 100%;
   border-radius: 50%;
-  box-shadow: 4px 5px 2px #888;
-  -moz-box-shadow: 4px 5px 2px #888;
   -webkit-box-shadow: 4px 5px 2px #888;
+     -moz-box-shadow: 4px 5px 2px #888;
+          box-shadow: 4px 5px 2px #888;
 }
 .home-links-wrapper {
   width: 45%;
@@ -180,15 +180,15 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   text-shadow: 2px 2px 2px #888;
   color: #FFF;
   background-color: #40ABEF;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .home-links:active {
   text-shadow: 4px 4px 4px #444;
-	box-shadow: none;
-	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
 }
 .github-linkedin-wrapper {
   width: 40%;
@@ -211,8 +211,8 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 }
 .me-wrapper:after { /* Covers the screen portion revealed by */
   content: "";      /* rotating diag-enjoy. Remove?? */
-  position: relative;
   z-index: -2;
+  position: relative;
   bottom: -40px;
   right: 0;
   height: 0;
@@ -228,9 +228,10 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   height: 57%;
   width: 130%;
   overflow-x: hidden;
-  transform: rotate(-8deg);
-  -webkit-transform: rotate(-8deg);
   -webkit-backface-visibility: hidden;
+  -webkit-transform: rotate(-8deg);
+      -ms-transform: rotate(-8deg);
+          transform: rotate(-8deg);
 }
 .diag-head {
   position: relative;
@@ -267,9 +268,10 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 }
 .diag-content {
   margin-top: 6%;
-  transform: rotate(8deg);
-  -webkit-transform: rotate(8deg);
   -webkit-backface-visibility: hidden;
+  -webkit-transform: rotate(8deg);
+      -ms-transform: rotate(8deg);
+          transform: rotate(8deg);
 }
 .diag-content p {
   padding: 5px 17%;
@@ -349,9 +351,9 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   overflow: visible;
   vertical-align: top;
   background-color: rgba(0, 0, 0, 0.5);;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Start of Ribbon Style Banner */
@@ -384,9 +386,9 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   background-color: rgba(0, 0, 0, 0.3); /* Color 4 */
 }
 .ribbon-container a {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   display: block;
   position: relative;
   height: 58px;
@@ -534,9 +536,9 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
     margin-top: 8%;
   }
   .main-headshot {
-    box-shadow: 2px 3px 1px #666;
-    -moz-box-shadow: 2px 3px 1px #666;
     -webkit-box-shadow: 2px 3px 1px #666;
+       -moz-box-shadow: 2px 3px 1px #666;
+            box-shadow: 2px 3px 1px #666;
   }
   .home-links-wrapper {
     width: 60%;
@@ -549,9 +551,9 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
     font-size: 3.5em;
     text-shadow: 2px 2px 2px #666;
     background-color: rgba(0, 0, 0, 0);
-		box-shadow: none;
-		-moz-box-shadow: none;
 		-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+		        box-shadow: none;
   }
   .home-links:hover {
     text-shadow: 4px 4px 4px #444;
