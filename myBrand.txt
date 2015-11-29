@@ -1,0 +1,9 @@
+My blue:MB: #50BBFF
+My stand-out blue:MSB: #40ABEF
+My dark blue:MDB: #347
+My grey:MG: rgba(0, 0, 0, 0.5)
+My pink:MP: #D00090
+My text color::MT: #FFF
+
+My main font: Eurofurence
+My icon font: IcoMoon

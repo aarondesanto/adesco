@@ -203,6 +203,74 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 }
 /* End of Entry Page Styles */
 
+/* Start of me page styles */
+.me-wrapper {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+.me-wrapper:after { /* Covers the screen portion revealed by */
+  content: "";      /* rotating diag-three. */
+  position: relative;
+  bottom: -40px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border-width: 35px 360px;
+  border-style: solid;
+  border-color: #333;
+}
+.main-diag {
+  position: relative;
+  overflow-x: hidden;
+  top: 6%;
+  left: -50px;
+  height: 60%;
+  width: 130%;
+  transform: rotate(-8deg);
+  -webkit-transform: rotate(-8deg);
+  -webkit-backface-visibility: hidden;
+}
+.diag-head {
+  position: relative;
+  overflow-x: hidden;
+  top: 0;
+  height: 10%;
+  width: 110%;
+  padding: 2% 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.diag-head h1 {
+  position: relative;
+  left: 20%;
+  font-size: 3em;
+  color: #FFF;
+}
+.top-diag-head {
+  padding-top: 8%;
+}
+.diag-one {
+  background-color: #50BBFF;
+}
+.diag-two {
+  background-color: #458;
+}
+.diag-three {
+  background-color: #333;
+}
+.diag-content {
+  margin-top: 6%;
+  transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+  -webkit-backface-visibility: hidden;
+}
+.diag-content p {
+  padding: 5px 17%;
+  font-size: 1.8em;
+  color: #FFF;
+}
+/* End of me page styles */
+
 /* Start of Portfolio Styles */
 .main-port {
   width: 90%;
