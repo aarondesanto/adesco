@@ -446,7 +446,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 /* End of galaxy media query */
 
 /* Start of mobile landscape media query */
-@media only screen and (max-width: 641px) and (orientation: landscape) {
+@media only screen and (max-width: 668px) and (orientation: landscape) {
   [class^="icon-"] {
     font-size: 3em;
     margin: 0 10px;
