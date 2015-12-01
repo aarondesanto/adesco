@@ -490,6 +490,29 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   .error-text-one {
     padding-top: 10%;
   }
+  .diag {
+    top: -7%;
+    height: 320px;
+  }
+  .diag-head {
+    height: 25px;
+    padding: 1% 0 2% 0;
+  }
+  .diag-head h1 {
+    left: 12%;
+  }
+  .top-diag-head {
+    padding-top: 5%;
+  }
+  .diag-write {
+    height: 280px;
+  }
+  .diag-enjoy {
+    height: 250px;
+  }
+  .diag-enjoy div {
+    height: 27px;
+  }
 }
 /* End of mobile landscape media query */
 
