@@ -229,13 +229,16 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   width: 110%;
   padding: 2% 0;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 8px 3px rgba(0, 0, 0, 0.3);
+       box-shadow: inset 0 0 8px 3px rgba(0, 0, 0, 0.3);
 }
 .diag-head h1 {
   position: relative;
   left: 20%;
   font-size: 3em;
   color: #FFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .top-diag-head {
   padding-top: 8%;
@@ -427,7 +430,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
 
 /* Start of galaxy media query */
 @media only screen and (min-width: 360px) {
-  .diag-me {
+  .diag-me { /* ME */
     height: 66%;
   }
   .diag-write {
@@ -439,7 +442,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   .diag-enjoy div {
     height: 12%;
   }
-  .each-project {
+  .each-project { /* PORTFOLIO */
     margin: 15px 32px 5px 25px;
   }
 }
@@ -462,7 +465,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
     height: 6%;
     padding-top: 2px;
   }
-  .headshot-wrapper {
+  .headshot-wrapper { /* HOME */
     width: 35%;
     margin: 0 auto 0 5%;
     margin-top: 3%;
@@ -479,18 +482,10 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
     left: 48%;
     padding-top: 3%;
   }
-  .main-port {
-    width: 93%;
-    padding-top: 4%;
-    padding-bottom: 5%;
-  }
-  .each-project {
-    margin: 15px 7% 5px 5px;
-  }
-  .error-text-one {
+  .error-text-one { /* 404 */
     padding-top: 10%;
   }
-  .diag {
+  .diag { /* ME */
     top: -7%;
     height: 320px;
   }
@@ -512,6 +507,14 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   }
   .diag-enjoy div {
     height: 27px;
+  }
+  .main-port { /* PORTFOLIO */
+    width: 93%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+  }
+  .each-project {
+    margin: 15px 7% 5px 5px;
   }
 }
 /* End of mobile landscape media query */
@@ -545,7 +548,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
     color: rgba(225, 225, 255, 0.5);
     background-color: rgba(33, 66, 99, 0);
   }
-  .headshot-wrapper {
+  .headshot-wrapper { /* HOME */
     width: 15%;
     margin-top: 8%;
   }
@@ -581,7 +584,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
     margin: 8% auto 0 auto;
     padding-top: 3%;
   }
-  .error-text-one {
+  .error-text-one { /* 404 */
     padding-top: 20%;
     font-size: 7em;
     text-shadow: 2px 2px 10px #333;
@@ -596,7 +599,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
     font-size: 2em;
     text-shadow: 2px 2px 10px #333;
   }
-  .diag {
+  .diag { /* ME */
     top: -12%;
     height: 55%;
   }
@@ -614,7 +617,7 @@ footer, .main-port, .error-text-one, .error-text-three, .headshot-wrapper, .home
   .diag-content p {
     font-size: 2.2em;
   }
-  .main-port {
+  .main-port { /* PORTFOLIO */
     width: 65%;
     padding: 0;
   }
