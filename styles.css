@@ -2,6 +2,8 @@
   margin: 0;
   border: 0;
   padding: 0;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   overflow: auto; /* Part 1 of overflow control (this removes the huge blank space without an element on the main page) */
 }
 
