@@ -1,0 +1,25 @@
+{
+  "name": "adesco",
+  "version": "0.4.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarondesanto/adesco.git"
+  },
+  "keywords": [
+    "portfolio",
+    "personal"
+  ],
+  "author": "Aaron DeSanto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aarondesanto/adesco/issues"
+  },
+  "homepage": "https://github.com/aarondesanto/adesco#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}

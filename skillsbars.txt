@@ -1,0 +1,155 @@
+<ul class="skill">
+	<li><span class="bar htmlbar"></span><h3>HTML5</h3></li>
+	<li><span class="bar cssbar"></span><h3>CSS3</h3></li>
+	<li><span class="bar jsbar"></span><h3>JavaScript</h3></li>
+	<li><span class="bar jquerybar"></span><h3>jQuery</h3></li>
+	<li><span class="bar ajaxbar"></span><h3>AJAX</h3></li>
+	<li><span class="bar jsonbar"></span><h3>JSON</h3></li>
+	<li><span class="bar angularbar"></span><h3>Angular JS</h3></li>
+	<li><span class="bar nodebar"></span><h3>node.js</h3></li>
+</ul>
+
+.skill {
+	list-style: none;
+	font-size: 12px;
+  font-family: arial;
+	width: 296px;
+	margin: 50px auto 0 auto;
+	position: relative;
+	line-height: 2em;
+	padding: 30px 0;
+}
+
+.skill li {
+	background-color: rgba(0, 0, 0, 0.2);
+	height:20px;
+  margin-bottom: 30px;
+	border-radius:5px;
+}
+
+.skill li h3 {
+	position:relative;
+	top: -25px;
+}
+
+.bar {
+	height: 18px;
+	margin: 1px;
+	position:absolute;
+	border-radius:5px;
+}
+
+.htmlbar {
+	width:99%;
+	-moz-animation: html 2s ease-out;
+	-webkit-animation: html 2s ease-out;
+  background-color: rgba(255, 100, 0, 0.6);
+}
+.cssbar {
+	width:80%;
+	-moz-animation: css 2s ease-out;
+	-webkit-animation: css 2s ease-out;
+  background-color: rgba(0, 190, 255, 0.6);
+}
+.jsbar {
+	width:85%;
+	-moz-animation: js 2s ease-out;
+	-webkit-animation: js 2s ease-out;
+  background-color: rgba(255, 255, 0, 0.6);
+}
+.jquerybar {
+	width:75%;
+	-moz-animation: jquery 2s ease-out;
+	-webkit-animation: jquery 2s ease-out;
+  background-color: rgba(0, 100, 255, 0.6);
+}
+.ajaxbar {
+	width:45%;
+	-moz-animation: ajax 2s ease-out;
+	-webkit-animation: ajax 2s ease-out;
+  background-color: rgba(220, 0, 150, 0.6);
+}
+.jsonbar {
+	width:60%;
+	-moz-animation: json 2s ease-out;
+	-webkit-animation: json 2s ease-out;
+  background-color: rgba(100, 100, 100, 0.8);
+}
+.angularbar {
+	width:50%;
+	-moz-animation: angular 2s ease-out;
+	-webkit-animation: angular 2s ease-out;
+  background-color: rgba(255, 0, 0, 0.6);
+}
+.nodebar {
+	width:30%;
+	-moz-animation: node 2s ease-out;
+	-webkit-animation: node 2s ease-out;
+  background-color: rgba(0, 150, 50, 0.7);
+}
+
+@-moz-keyframes html {
+  0% { width:0px; }
+  100% { width:99%; }
+}
+@-moz-keyframes css {
+  0% { width:0px; }
+  100% { width:80%; }
+}
+@-moz-keyframes js {
+  0% { width:0px; }
+  100% { width:85%; }
+}
+@-moz-keyframes jquery {
+  0% { width:0px; }
+  100% { width:75%; }
+}
+@-moz-keyframes ajax {
+  0% { width:0px; }
+  100% { width:45%; }
+}
+@-moz-keyframes json {
+  0% { width:0px; }
+  100% { width:60%; }
+}
+@-moz-keyframes angular {
+  0% { width:0px; }
+  100% { width:50%; }
+}
+@-moz-keyframes node {
+  0% { width:0px; }
+  100% { width:30%; }
+}
+
+@-webkit-keyframes html {
+  0% { width:0px; }
+  100% { width:99%; }
+}
+@-webkit-keyframes css {
+  0% { width:0px; }
+  100% { width:80%; }
+}
+@-webkit-keyframes js {
+  0% { width:0px; }
+  100% { width:85%; }
+}
+@-webkit-keyframes jquery {
+  0% { width:0px; }
+  100% { width:75%; }
+}
+@-webkit-keyframes ajax {
+  0% { width:0px; }
+  100% { width:45%; }
+}
+@-webkit-keyframes json {
+  0% { width:0px; }
+  100% { width:60%; }
+}
+@-webkit-keyframes angular {
+  0% { width:0px; }
+  100% { width:50%; }
+}
+@-webkit-keyframes node {
+  0% { width:0px; }
+  100% { width:30%; }
+}
